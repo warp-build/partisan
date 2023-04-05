@@ -110,7 +110,7 @@ init_per_testcase(Case, Config) when Case == call_remote1;
                      Case == call_remote_n2;
                      Case == call_remote_n3;
                                      Case == send_request ->
-    {ok,N} = start_node(hubba),
+    {ok,Node} = start_node(hubba),
     [{node,Node}, {peer, Node} | Config];
 
 init_per_testcase(_Case, Config) ->

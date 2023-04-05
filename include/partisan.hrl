@@ -163,7 +163,8 @@
 %% =============================================================================
 
 -if(?OTP_RELEASE >= 25).
-    %% already defined by OTP
+    %% may already be defined by OTP
+    -define(CT_PEER, ct_slave).
 -else.
     -define(CT_PEER, ct_slave).
 -endif.

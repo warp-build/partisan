@@ -19,7 +19,7 @@
 %%
 -module(gen_statem).
 
--include("logger.hrl").
+-include_lib("kernel/include/logger.hrl").
 
 %%%
 %%% NOTE: If init_ack() return values are modified, see comment

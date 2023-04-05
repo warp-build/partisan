@@ -65,7 +65,7 @@
           state,
           supervised = false :: 'false' | pid()}).
 
--include("logger.hrl").
+-include_lib("kernel/include/logger.hrl").
 
 %%%=========================================================================
 %%%  API

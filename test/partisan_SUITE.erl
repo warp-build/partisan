@@ -212,6 +212,8 @@ all() ->
         %% ,{hyparview_xbot, [shuffle]}
      ]},
 
+     {group, simple, []},
+
      %% Full.
 
      {group, with_full_membership_strategy, []},

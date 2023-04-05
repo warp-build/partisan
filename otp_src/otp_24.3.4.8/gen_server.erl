@@ -118,7 +118,7 @@
 %% Internal exports
 -export([init_it/6]).
 
--include("logger.hrl").
+-include_lib("kernel/include/logger.hrl").
 
 -define(
    STACKTRACE(),

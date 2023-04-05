@@ -33,11 +33,12 @@
 
 start_disterl() ->
     {ok, Hostname} = inet:gethostname(),
+    Suffix = erlang:integer_to_list(rand:uniform(1_000_000)),
     os:cmd(os:find_executable("epmd") ++ " -daemon"),
-    case net_kernel:start([list_to_atom("runner@" ++ Hostname), shortnames]) of
+    case net_kernel:start([list_to_atom("runner-" ++ Suffix ++ "@" ++ Hostname), shortnames]) of
         {ok, _} ->
             ok;
-        {error, {already_started, _}} ->
+        {error, {{already_started, _}, _}} ->
             ok
     end.
 

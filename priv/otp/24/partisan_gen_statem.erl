@@ -47,8 +47,8 @@
 %% -----------------------------------------------------------------------------
 -module(partisan_gen_statem).
 
--include_lib("partisan/include/partisan.hrl").
--include_lib("partisan/include/partisan_logger.hrl").
+-include("include/partisan.hrl").
+-include("include/partisan_logger.hrl").
 
 
 %% PARTISAN EXTENSIONS

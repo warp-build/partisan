@@ -42,7 +42,7 @@
 -export_type([spawn_option/0]).
 -export_type([start_spawn_option/0]).
 
--include("logger.hrl").
+-include_lib("kernel/include/logger.hrl").
 
 %%-----------------------------------------------------------------------------
 

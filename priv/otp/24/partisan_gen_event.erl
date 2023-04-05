@@ -65,7 +65,7 @@
           state,
           supervised = false :: 'false' | pid()}).
 
--include_lib("partisan/include/partisan_logger.hrl").
+-include("include/partisan_logger.hrl").
 
 %%%=========================================================================
 %%%  API
